@@ -1,0 +1,30 @@
+#home-app-contacts{
+    background-image: url("/assets/svg/contacts.svg");
+    background-size: cover;
+    background-position: center;
+    
+}
+#home-app-messages{
+    background-image: url("/assets/svg/chat.svg");
+    background-size: cover;
+    background-position: center;
+    
+}
+#home-app-calls{
+    background-image: url("/assets/svg/call.svg");
+    background-size: cover;
+    background-position: center;
+    
+}
+#home-app-apps{
+    background-image: url("/assets/svg/apps.svg");
+    background-size: cover;
+    background-position: center;
+    
+}
+#home-app-data-plan{
+    background-image: url("/assets/svg/signal_cellular.svg");
+    background-size: cover;
+    background-position: center;
+    
+}

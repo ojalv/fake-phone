@@ -1,0 +1,40 @@
+:root {
+  --messges-background: rgb(12, 12, 15);
+  --messages: black;
+  --messages-img: rgb(255, 255, 255);
+  --messages-text: rgb(255, 255, 255);
+}
+
+#messages {
+  position: relative;
+  width: calc(360px * 0.65);
+  height: calc(640px * 0.65);
+  border-radius: 10px;
+  background-color: var(--contacts);
+  z-index: 1;
+  overflow-y: scroll;
+  color: var(--messages-text);
+}
+
+#messages h2{
+    text-align: center;
+}
+
+#messages::-webkit-scrollbar {
+  display: none;
+}
+
+#messages .messages-messsage {
+  width: 100%;
+  height: 56px;
+  background-color: var(--contact);
+  border-bottom: 1px solid var(--contact-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+#messages .messages-messsage:last-child {
+    margin-bottom: 20px
+}

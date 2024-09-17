@@ -1,0 +1,74 @@
+:root {
+  --data-plan-background: rgb(12, 12, 15);
+  --data: black;
+  --data-plan-img: rgb(255, 255, 255);
+  --data-plan-text: rgb(255, 255, 255);
+}
+
+#data-plan {
+  position: relative;
+  width: calc(360px * 0.65);
+  height: calc(640px * 0.65);
+  border-radius: 10px;
+  background-color: var(--data-plan-background);
+  z-index: 1;
+  overflow-y: scroll;
+  color: var(--data-plan-text);
+}
+
+#data-plan::-webkit-scrollbar {
+  display: none;
+}
+#data-plan h2, #data-plan p {
+  text-align: center;
+}
+#data-usage {
+  position: relative;
+}
+
+.data-bar {
+  position: absolute;
+  left: 12px;
+  width: 210px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+#data-used-bar {
+  background-color: red;
+  width: calc(210px / 1.45);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#data-remaining-bar {
+  background-color: red;
+  opacity: 40%;
+}
+
+#data-usage-info{
+text-align: center;
+}
+.gb-used {
+  font-size:x-large;
+}
+
+.period{
+    font-size: x-small;
+    position: relative;
+    right: 70px;
+}
+
+.data-bar-info{
+    position: absolute;
+    bottom: -34px;
+    font-size: x-small;
+}
+
+#left-limit-data-usage{
+left: 20px;
+}
+
+#right-limit-data-usage{
+    right: 12px;
+}

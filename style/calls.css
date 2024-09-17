@@ -1,0 +1,52 @@
+:root {
+  --calls: rgb(12, 12, 15);
+  --call: black;
+  --call-logo: rgb(255, 255, 255);
+  --call-text: rgb(255, 255, 255);
+}
+
+#calls {
+  position: relative;
+  width: calc(360px * 0.65);
+  height: calc(640px * 0.65);
+  border-radius: 10px;
+  background-color: var(--contacts);
+  z-index: 1;
+  overflow-y: scroll;
+  color: var(--contact-text);
+}
+#calls::-webkit-scrollbar {
+  display: none;
+}
+
+#calls h2 {
+  text-align: center;
+}
+#calls .call {
+  display: flex;
+  justify-content: space-evenly;
+  width: 234px;
+  height: 56px;
+  background-color: var(--contact);
+  border-bottom: 1px solid var(--contact-text);
+}
+
+#calls .call .left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+#calls .call .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calls .call .left .contact-and-date .date {
+  display: flex;
+  align-items: baseline;
+  justify-content: right;
+  font-size: small;
+}

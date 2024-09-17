@@ -1,0 +1,54 @@
+:root {
+  --phone-background: rgb(12, 12, 15);
+}
+
+#phone {
+  position: relative;
+  width: calc(360px * 0.65);
+  height: calc(640px * 0.65);
+  border-radius: 20px;
+  border: double 10px;
+  background-color: var(--phone-background);
+  border-color: rgb(180, 166, 88);
+  cursor: crosshair;
+  padding-top: 20px;
+}
+
+#navigation {
+  position: absolute;
+  bottom: 0px;
+  background-color: black;
+  width: 100%;
+  height: 20px;
+  z-index: 2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#navigation .nav-btn {
+  width: 15px;
+  height: 15px;
+  opacity: 100%;
+	background-color: black;
+}
+
+#nav-btn-home {
+  background-image: url("/assets/svg/menu.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+#nav-btn-close-all {
+  background-image: url("/assets/svg/close.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+#nav-btn-back {
+  background-image: url("/assets/svg/chevron_left.svg");
+  background-position: center;
+  background-size: cover;
+}
